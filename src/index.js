@@ -32,6 +32,5 @@ if (!fs.existsSync(docPath)) {
 			}
 		});
 	};
-
 	walk(srcAbsPath, buildAbsPath);
 }
