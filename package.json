@@ -10,6 +10,6 @@
   "author": "Kyung Lee",
   "license": "ISC",
   "dependencies": {
-    "md-to-pdf": "^5.2.1"
+    "md-to-pdf": "^5.2.4"
   }
 }
