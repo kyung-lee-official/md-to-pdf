@@ -1,15 +1,24 @@
 {
   "name": "md-to-pdf",
   "version": "1.0.0",
-  "description": "",
+  "description": "Recursively convert Markdown files in doc/ to PDFs in build/",
+  "type": "module",
   "main": "./src/index.js",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
-  "build": "node ./src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./src/index.js",
+    "pdf:install": "playwright install chromium",
+    "postinstall": "playwright install chromium"
   },
   "author": "Kyung Lee",
   "license": "ISC",
   "dependencies": {
-    "md-to-pdf": "^5.2.4"
+    "@mdit/plugin-katex": "^1.1.5",
+    "gray-matter": "^4.0.3",
+    "katex": "^0.19.1",
+    "markdown-it": "^15.0.3",
+    "playwright": "^1.65.0"
   }
 }

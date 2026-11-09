@@ -1,9 +1,13 @@
 ---
-script:
-    - path: src/mathjax/mathjax-config.js
-    - url: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+title: Formulas
 ---
 
-# Formulas with MathJax
+# Formulas with KaTeX
 
-When $a \ne 0$, there are two solutions to \\(ax^2 + bx + c = 0\\).
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\).
+
+The quadratic formula is:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
